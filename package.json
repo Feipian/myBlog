@@ -12,12 +12,18 @@
     "@next/mdx": "^13.5.4",
     "@nextui-org/react": "^2.1.13",
     "bootstrap": "^5.3.2",
+    "date-fns": "^2.30.0",
+    "esbuild": "^0.19.4",
     "font-awesome": "^4.7.0",
     "framer-motion": "^10.16.4",
+    "gray-matter": "^4.0.3",
     "mdb-react-ui-kit": "^6.3.0",
+    "mdx-bundler": "^9.2.1",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "engines": {
     "node": ">=18"
