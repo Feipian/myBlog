@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
         <>
-            <article class="prose lg:prose-xl max-w-2xl border-violet-700 min-h-screen rounded-sm container">
+            <article className="prose lg:prose-xl max-w-2xl border-violet-700 min-h-screen rounded-sm container">
 
                 <div className="container  ">
                     <Head>

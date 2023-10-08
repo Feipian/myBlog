@@ -1,15 +1,11 @@
 Bug:
     
+
+
+    fix global css problem (import global css to _app.js)
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+
     cant topography (fix)
     
     Navbar cant display css in global (fix)
