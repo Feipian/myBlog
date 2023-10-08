@@ -3,10 +3,10 @@ import Link from "next/link";
 export function Navbar() {
     return (
         <>
-            <nav className="flex justify-between rounded-md items-center bg-sky-600 w-[92%] mx-auto p-4 sm:border-5 sm:border-cyan-700">
-                <div className="text-2xl font-semibold text-gray-300">
+            <nav className="flex justify-between rounded-md items-center my-3 shadow-md shadow-blue-300 bg-sky-600 w-[92%] mx-auto p-4 sm:border-5 sm:border-cyan-700">
+                <Link href={"/"} className="text-2xl font-semibold text-gray-300 hover:text-white">
                     LearnExperience
-                </div>
+                </Link>
 
                 <div
                     className="navLinks md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 sm:shadow md:border-2">

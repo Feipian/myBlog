@@ -1,5 +1,5 @@
-import { Navbar } from "../components/Navbar";
-import RootLayout from "../app/layout";
+
+
 import '../styles/global.css'
 import Script from "next/script";
 

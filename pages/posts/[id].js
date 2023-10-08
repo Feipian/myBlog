@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from '../../components/date';
+import Link from "next/link";
 
 
-export async function getStaticProps({ params }){
+export async function getStaticProps({ params }) {
     // Fetch necessary data for the blog post using params.id
     const postData = await getPostData(params.id);
     return {
@@ -26,17 +27,26 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
         <>
-            <div className="container">
-                <Head>
-                    <title>{ postData.title }</title>
-                </Head>
-                {postData.title}
-                <br />
-                {postData.id}
-                <br />
-                <Date dateString={postData.date}></Date>
-                <div dangerouslySetInnerHTML={{__html: postData.contentHtml }}></div>
-            </div>
+            <article class="prose lg:prose-xl max-w-2xl border-violet-700 min-h-screen rounded-sm container">
+
+                <div className="container  ">
+                    <Head>
+                        <title>{postData.title}</title>
+                    </Head>
+                    <div className=" text-center text-2xl mb-2 border-y-4 border-violet-700 py-2">
+                        <Link href={`/blog`} className="text-violet-600 hover:underline hover:text-violet-200">Blog</Link>
+                    </div>
+                    <div className="text-2xl">
+
+                        {postData.title}
+                        <br />
+                        {postData.id}
+                        <br />
+                        <Date dateString={postData.date}></Date>
+                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className="border-t-2 border-violet-700"></div>
+                </div>
+            </article>
         </>
     );
 }

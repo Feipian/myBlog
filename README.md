@@ -1,3 +1,20 @@
+Bug:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    cant topography (fix)
+    
+    Navbar cant display css in global (fix)
+    - https://dev.to/dmuraco3/responsive-global-navbar-in-nextjs-with-tailwindcss-45p4
+
 
 Add blog but not style
 
