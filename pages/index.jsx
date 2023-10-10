@@ -15,7 +15,7 @@ export default function Home() {
       <Script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></Script>
 
       <main className="container mx-auto py-8 flex flex-col sm:flex-row">
-        <aside className="w-full sm:w-1/4 p-4 ">
+        <aside className="w-full sm:w-1/4 p-4  ">
           <div className="bg-white p-4 shadow rounded text-center mx-auto">
             <div className="icon text-5xl">
               <i className="fa fa-html5 text-5xl" aria-hidden="true"></i>

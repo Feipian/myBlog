@@ -19,11 +19,14 @@
     "gray-matter": "^4.0.3",
     "mdb-react-ui-kit": "^6.3.0",
     "mdx-bundler": "^9.2.1",
+    "moment": "^2.29.4",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4"
   },
   "engines": {
     "node": ">=18"

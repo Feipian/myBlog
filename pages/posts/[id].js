@@ -34,7 +34,7 @@ export default function Post({ postData }) {
                         <title>{postData.title}</title>
                     </Head>
                     <div className=" text-center text-2xl mb-2 border-y-4 border-violet-700 py-2">
-                        <Link href={`/blog`} className="text-violet-600 hover:underline hover:text-violet-200">Blog</Link>
+                        <Link href={`/blog`} className="text-violet-600 text-blod hover:text-violet-200">Blog</Link>
                     </div>
                     <div className="text-2xl">
 

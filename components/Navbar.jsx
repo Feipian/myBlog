@@ -9,19 +9,19 @@ export function Navbar() {
                 </Link>
 
                 <div
-                    className="navLinks md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 sm:shadow md:border-2">
+                    className="navLinks md:static absolute  md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5  ">
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
                         <li>
-                            <Link href="/">Home</Link>
+                            <Link href="/" className="bg-white p-2 rounded-md font-bold">Home</Link>
                         </li>
                         <li>
-                            <Link href="/blog/">Blog</Link>
+                            <Link href="/blog/" className="bg-white p-2 rounded-md font-bold">Blog</Link>
                         </li>
                         <li>
-                            <Link href="/product">Products</Link>
+                            <Link href="/product" className="bg-white p-2 rounded-md font-bold">Products</Link>
                         </li>
                         <li>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="/contact" className="bg-white p-2 rounded-md font-bold">Contact</Link>
                         </li>
                     </ul>
                 </div>

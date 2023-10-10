@@ -2,6 +2,12 @@ Bug:
     
 
 
+
+History:
+
+    Add weather function
+    title
+
     fix global css problem (import global css to _app.js)
     
     

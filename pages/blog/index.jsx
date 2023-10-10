@@ -21,8 +21,8 @@ export default function blog({ allPostData }) {
         <>
             <div className="container max-w-2xl bg-indigo-50 min-h-screen rounded-sm ">
 
-                <div>
-                    <div className=" text-center text-2xl mb-2 border-y-2 py-2 bg-stone-800 text-white">
+                <div className="container p-4">
+                    <div className=" text-center text-2xl mb-4 border-y-2 py-2 bg-stone-800 text-white text-bold">
                         Blog
                     </div>
                     <div className="w-full ">

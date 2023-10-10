@@ -4,6 +4,11 @@ module.exports = {
       webpack5: true,
     },
     reactStrictMode: true,
+    // env
+    // env: {
+    //   BASE_URL: process.env.BASE_URL,
+    // },
+
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
       if (!isServer) {
         // https://github.com/vercel/next.js/issues/7755
