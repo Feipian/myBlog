@@ -2,6 +2,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 import React, { useEffect, useState } from 'react'
 import CardExampleCard from './WeatherInfo'
+import { Dimmer, Loader } from 'semantic-ui-react'
 
 
 export default function Weather() {
@@ -47,7 +48,9 @@ export default function Weather() {
                 
             ) : (
                 <div>
-                    No data!!
+                    <Dimmer active>
+                        <Loader>Loading..</Loader>
+                    </Dimmer>
                 </div>
             )}
         </div>

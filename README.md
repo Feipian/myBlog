@@ -5,6 +5,7 @@ Bug:
 
 History:
 
+    Add Weather reflash function
     Add weather function
     title
 

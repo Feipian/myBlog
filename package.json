@@ -11,6 +11,7 @@
     "@mdx-js/loader": "^2.3.0",
     "@next/mdx": "^13.5.4",
     "@nextui-org/react": "^2.1.13",
+    "@zeit/next-css": "^1.0.1",
     "bootstrap": "^5.3.2",
     "date-fns": "^2.30.0",
     "esbuild": "^0.19.4",
