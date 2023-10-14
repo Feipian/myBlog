@@ -15,6 +15,7 @@
     "bootstrap": "^5.3.2",
     "date-fns": "^2.30.0",
     "esbuild": "^0.19.4",
+    "firebase": "^10.5.0",
     "font-awesome": "^4.7.0",
     "framer-motion": "^10.16.4",
     "gray-matter": "^4.0.3",
