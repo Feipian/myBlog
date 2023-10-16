@@ -1,11 +1,22 @@
 
-
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 import Script from "next/script";
+import { initFirebase } from "../Firebase/firebaseApp";
 
 
 
 export default function Home() {
+  initFirebase();
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
+
+  const signIn = async () => {
+    const result = await signInWithPopup(auth, provider);
+    console.log(result.user);
+  }
+
+
   return (
     <>
       

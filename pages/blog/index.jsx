@@ -17,6 +17,7 @@ export async function getStaticProps() {
 
 
 export default function blog({ allPostData }) {
+    
     return (
         <>
             <div className="container max-w-2xl bg-indigo-50 min-h-screen rounded-sm ">

@@ -1,9 +1,15 @@
+Todo:
+    auth system:https://www.youtube.com/watch?v=BQrE98bP6m4
+    relate database:
+
 Bug:
     
 
 
 
 History:
+
+    Add a New responsive Navigation bar
 
     Add Weather reflash function
     Add weather function
