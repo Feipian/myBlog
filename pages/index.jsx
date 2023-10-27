@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 import Script from "next/script";
@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      
+
 
       <Script src="https://kit.fontawesome.com/72c34bbb42.js" crossorigin="anonymous"></Script>
       <Script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></Script>
@@ -59,29 +59,34 @@ export default function Home() {
 
         <section className="w-full sm:w-3/4 p-4">
           <div className="bg-white p-4 shadow rounded">
-
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
 
-            <p className="text-base leading-6 text-gray-700">王鴻銘</p>
-            <p className="text-base leading-6 text-gray-700">無工作經驗</p>
-            <p className="text-base leading-6 text-gray-700">職位:WEB 前端</p>
-            <p className="text-base leading-6 text-gray-700">最高學歷:National Quemoy University {"->"} CSIE</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="text-info md:w-1/2">
+                <p className="text-base leading-6 text-gray-700">王鴻銘</p>
+                <p className="text-base leading-6 text-gray-700">無工作經驗</p>
+                <p className="text-base leading-6 text-gray-700">職位:WEB 前端</p>
+                <p className="text-base leading-6 text-gray-700">最高學歷:National Quemoy University {"->"} CSIE</p>
+              </div>
+
+              <div className="image-container">
+                <Image src="/images/Home/Dog.webp" alt="My webp dog" width={200} height={200} />
+              </div>
+            </div>
 
             <h2 className="font-semibold mt-2">學習過的領域:</h2>
             <ul className="list-disc pl-4 mt-4">
-              <li>Front-End:基礎網頁設計、RWD、CSS、CSS FrameWork、JavaScript、 TypeScript、PHP</li>
-              <li>Back-End:Flask、Django、Laravel、Deno、Node</li>
-              <li>Machine Learning:Pytorch、ScikitLearn、CrossValidation、Regression</li>
-              <li>Language: C、Python、C#、C++、Java、JavaScript、TypeScript、PHP</li>
+              <li>Front-End: 基礎網頁設計、RWD、CSS、CSS Framework、JavaScript, TypeScript, PHP</li>
+              <li>Back-End: Flask, Django, Laravel, Deno, Node</li>
+              <li>Machine Learning: Pytorch, ScikitLearn, CrossValidation, Regression</li>
+              <li>Language: C, Python, C#, C++, Java, JavaScript, TypeScript, PHP</li>
               <li>SRE: Ansible, JumpServer, CentOS, Ubuntu, AWS, Jenkins, Terraform, Zabbix</li>
-              <li>證照: 電腦硬體裝修乙級、工業電子乙級、網路架設</li>
+              <li>證照: 電腦硬體裝修乙級, 工業電子乙級, 網路架設</li>
             </ul>
-
-
-
           </div>
-
         </section>
+
+
       </main>
 
     </>
