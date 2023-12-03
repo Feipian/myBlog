@@ -11,6 +11,8 @@ Bug:
 
 History:
 
+    Add Github deploy to GCP using docker
+
     Add a New responsive Navigation bar
 
     Add Weather reflash function
