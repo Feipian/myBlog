@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
 
 export default function blog({ allPostData }) {
-    
+
     return (
         <>
             <div className="container max-w-2xl bg-indigo-50 min-h-screen rounded-sm ">
@@ -38,6 +38,14 @@ export default function blog({ allPostData }) {
                                     </div>
                                 </div>
                             ))}
+
+                            {/* 在你的博客页面中添加一个链接到新增文章的页面 */}
+                            <div className="bg-slate-100 p-3  rounded-lg shadow-lg">
+
+                                <Link href="/blog/new-post">
+                                    <div className="text-red-700 hover:text-lime-500 hover:underline">Create a new post</div>
+                                </Link>
+                            </div>
                         </div>
 
                         {/* <ul >

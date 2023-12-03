@@ -1,4 +1,6 @@
 Todo:
+
+    How to solve cant complate jump window??
     auth system:https://www.youtube.com/watch?v=BQrE98bP6m4
     relate database:
 
