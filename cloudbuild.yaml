@@ -12,6 +12,5 @@ steps:
     args: ['run', 'build']
 
   # Step 4: Deploy to App Engine (adjust as needed)
-   # Step 6: Deploy to App Engine (adjust as needed)
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['app', 'deploy', '/app/app.yaml']
