@@ -1,7 +1,7 @@
 steps:
   # Step 1: Checkout code from the repository
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', '--single-branch', '--branch', 'main', 'https://github.com/Feipian/myBlog.git', '.']
+    args: ['clone', '--single-branch', '--branch', 'main', 'https://github.com/Feipian/myBlog.git', '/app']
 
   # Step 2: Install dependencies
   - name: 'gcr.io/cloud-builders/npm'
@@ -12,5 +12,6 @@ steps:
     args: ['run', 'build']
 
   # Step 4: Deploy to App Engine (adjust as needed)
+   # Step 6: Deploy to App Engine (adjust as needed)
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy']
+    args: ['app', 'deploy', '/app/app.yaml']
