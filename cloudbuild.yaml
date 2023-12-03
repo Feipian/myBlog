@@ -1,0 +1,16 @@
+steps:
+  # Step 1: Checkout code from the repository
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['clone', '--single-branch', '--branch', 'main', 'https://github.com/Feipian/myBlog.git', '.']
+
+  # Step 2: Install dependencies
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+
+  # Step 3: Build Next.js app
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+
+  # Step 4: Deploy to App Engine (adjust as needed)
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
