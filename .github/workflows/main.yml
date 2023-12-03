@@ -1,0 +1,41 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Docker
+      uses: actions/setup-node@v2
+
+    - name: Build the Docker image
+      run: |
+        docker build -t gcr.io/$your_project_id/$your_app_name:$GITHUB_SHA .
+        docker push gcr.io/$your_project_id/$your_app_name:$GITHUB_SHA
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Google Cloud CLI
+      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEYBASE64 }}
+        export_default_credentials: true
+
+    - name: Deploy to GCP
+      run: |
+        gcloud run deploy your-app-name \
+          --image gcr.io/$your_project_id/$your_app_name:$GITHUB_SHA \
+          --platform managed \
+          --region asia \
+          --allow-unauthenticated
