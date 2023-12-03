@@ -18,8 +18,8 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build -t gcr.io/$your_project_id/$your_app_name:$GITHUB_SHA .
-        docker push gcr.io/$your_project_id/$your_app_name:$GITHUB_SHA
+        docker build -t gcr.io/myweb-406911/$mynextweb:$GITHUB_SHA .
+        docker push gcr.io/myweb-406911/$mynextweb:$GITHUB_SHA
 
   deploy:
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
     - name: Deploy to GCP
       run: |
         gcloud run deploy your-app-name \
-          --image gcr.io/$your_project_id/$your_app_name:$GITHUB_SHA \
+          --image gcr.io/myweb-406911/$mynextweb:$GITHUB_SHA \
           --platform managed \
           --region asia \
           --allow-unauthenticated
