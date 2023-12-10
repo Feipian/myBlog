@@ -3,7 +3,16 @@ import Image from 'next/image'
 
 import Script from "next/script";
 
-
+export async function getStaticProps() {
+  /* Fetch data here */
+ 
+  return {
+    props: {
+      /* Add something to your props */
+    },
+    revalidate: 10, // Seconds
+  };
+}
 
 
 export default function Home() {
